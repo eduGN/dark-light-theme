@@ -1,4 +1,3 @@
-<router-outlet></router-outlet>
 <div class="btn-container" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"><button (click)="changeTheme()" class="theme-button" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"><fa-icon class="btn-img" [icon]="icon"></fa-icon></button></div>
 <div class="main-box d-flex flex-column align-items-center py-5" [ngClass]="{'bg_light-body': theme_mode,'bg_dark-body': !theme_mode}">
   <img src={{img_profile}} alt="" class="profilepic my-3 rounded-circle" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"/>
@@ -14,4 +13,5 @@
    </div>
   </a>
 </div>
+<router-outlet></router-outlet>
 
