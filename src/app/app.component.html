@@ -1,4 +1,4 @@
-<div class="btn-container" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"><button (click)="changeTheme()" class="theme-button" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"><fa-icon class="btn-img" [icon]="icon"></fa-icon></button></div>
+<fa-icon (click)="changeTheme()" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}" class="btn-img btn-container" [icon]="icon"></fa-icon>
 <div class="main-box d-flex flex-column align-items-center py-5" [ngClass]="{'bg_light-body': theme_mode,'bg_dark-body': !theme_mode}">
   <img src={{img_profile}} alt="" class="profilepic my-3 rounded-circle" [ngClass]="{'bg_light-box': theme_mode,'bg_dark-box': !theme_mode}"/>
   <h4 class="title my-1">@dragonite</h4>
